@@ -1,9 +1,9 @@
 {
   "name" : "youmatter/likes",
-	"type": "wordpress-plugin"
+  "type": "wordpress-plugin",
   "authors": [
     {
       "name": "Gisserot Jeremie"
     }
-  ],
+  ]
 }
