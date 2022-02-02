@@ -1,0 +1,73 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ * sass --watch scss/:css/
+ */
+@keyframes bounce {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0.9); } }
+@keyframes bounceUp {
+  from {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.4); }
+  to {
+    transform: scale(1); } }
+.ymli_container {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0 !important;
+  position: relative;
+  background-color: #fff !important;
+  border: 0 !important; }
+  .ymli_container:hover {
+    background-color: #1c2f49 !important; }
+  .ymli_container.liked svg {
+    opacity: 1;
+    transition: all 0.2s ease-in-out; }
+    .ymli_container.liked svg svg path {
+      transition: all 0.2s ease-in-out; }
+  .ymli_container.notliked svg svg path {
+    transition: all 0.2s ease-in-out; }
+  .ymli_container.working svg, .ymli_container.liked.working svg {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.7; }
+    .ymli_container.working svg svg, .ymli_container.liked.working svg svg {
+      transition: all 0.2s ease-in-out; }
+  .ymli_container svg {
+    width: 41px;
+    transition: all .2s ease-out;
+    fill: transparent;
+    margin-right: 0.1em; }
+  .ymli_container:hover svg {
+    transition: all .2s ease-out; }
+  .ymli_container:active svg {
+    transition: all .2s ease-out;
+    transform: scale(0.5); }
+  .ymli_container b {
+    margin-right: 0.1em; }
+  .ymli_container .ymli_heart_container {
+    position: relative;
+    margin-right: 0.3em; }
+  .ymli_container .ymli_counter_container {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    bottom: 20%;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #1c2f49;
+    transition: all .2s ease-out;
+    z-index: 20;
+    animation: bounce 0.35s ease infinite alternate; }
+
+/*# sourceMappingURL=ym-likes-public.css.map */
